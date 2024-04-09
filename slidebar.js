@@ -190,7 +190,7 @@ btn_all.addEventListener('click',()=>
     xmark.addEventListener('click',()=>{
         received_li.remove();
         piece=received_ul.children.length-1;
-        total-=data[n].price;
+        total -= parseFloat(price.textContent);
 
         pay_piece.textContent=(`Say: ${piece}`);
         pay_total.textContent=(`Toplam: ${(total.toFixed(2))}$`);
