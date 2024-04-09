@@ -225,13 +225,14 @@ pay_total.textContent=(`Toplam: ${(total.toFixed(2))}$`);
 
 
 //Resetleme
-reset_pay.addEventListener('click',()=>
-{
-    piece=0;
-    total=0;
-    pay_piece.textContent=(`Say: ${piece}`);
-    pay_total.textContent=(`Toplam: ${Math.trunc(total)}$`);
-    received_ul.innerHTML='';
+reset_pay.addEventListener('click', () => {
+    piece = 0;
+    total = 0;
+
+    pay_piece.textContent = (`Say: ${piece}`);
+    pay_total.textContent = (`Toplam: ${Math.trunc(total)}$`);
+    received_ul.innerHTML = '';
+    received_ul.prepend(received_li_head);
 })
 
 
